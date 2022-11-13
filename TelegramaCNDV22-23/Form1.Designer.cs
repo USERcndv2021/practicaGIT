@@ -31,10 +31,11 @@ namespace TelegramaCNDV22_23
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.bCalcularCNDV = new System.Windows.Forms.Button();
+            this.rbUrgente = new System.Windows.Forms.RadioButton();
+            this.rbOrdinario = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -55,22 +56,11 @@ namespace TelegramaCNDV22_23
             this.txtTelegrama.Size = new System.Drawing.Size(479, 112);
             this.txtTelegrama.TabIndex = 1;
             // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUrgente.Location = new System.Drawing.Point(65, 223);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(107, 24);
-            this.cbUrgente.TabIndex = 2;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 267);
+            this.label2.Location = new System.Drawing.Point(52, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 3;
@@ -78,7 +68,7 @@ namespace TelegramaCNDV22_23
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(132, 267);
+            this.txtPrecio.Location = new System.Drawing.Point(131, 289);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(105, 22);
             this.txtPrecio.TabIndex = 4;
@@ -86,7 +76,7 @@ namespace TelegramaCNDV22_23
             // bCalcularCNDV
             // 
             this.bCalcularCNDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bCalcularCNDV.Location = new System.Drawing.Point(382, 223);
+            this.bCalcularCNDV.Location = new System.Drawing.Point(410, 211);
             this.bCalcularCNDV.Name = "bCalcularCNDV";
             this.bCalcularCNDV.Size = new System.Drawing.Size(134, 52);
             this.bCalcularCNDV.TabIndex = 5;
@@ -94,15 +84,40 @@ namespace TelegramaCNDV22_23
             this.bCalcularCNDV.UseVisualStyleBackColor = true;
             this.bCalcularCNDV.Click += new System.EventHandler(this.bCalcularCNDV_Click);
             // 
+            // rbUrgente
+            // 
+            this.rbUrgente.AutoSize = true;
+            this.rbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbUrgente.Location = new System.Drawing.Point(227, 225);
+            this.rbUrgente.Name = "rbUrgente";
+            this.rbUrgente.Size = new System.Drawing.Size(96, 24);
+            this.rbUrgente.TabIndex = 6;
+            this.rbUrgente.TabStop = true;
+            this.rbUrgente.Text = "Urgente";
+            this.rbUrgente.UseVisualStyleBackColor = true;
+            // 
+            // rbOrdinario
+            // 
+            this.rbOrdinario.AutoSize = true;
+            this.rbOrdinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOrdinario.Location = new System.Drawing.Point(56, 225);
+            this.rbOrdinario.Name = "rbOrdinario";
+            this.rbOrdinario.Size = new System.Drawing.Size(108, 24);
+            this.rbOrdinario.TabIndex = 7;
+            this.rbOrdinario.TabStop = true;
+            this.rbOrdinario.Text = "Ordinario";
+            this.rbOrdinario.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 335);
+            this.ClientSize = new System.Drawing.Size(642, 335);
+            this.Controls.Add(this.rbOrdinario);
+            this.Controls.Add(this.rbUrgente);
             this.Controls.Add(this.bCalcularCNDV);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -116,10 +131,11 @@ namespace TelegramaCNDV22_23
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTelegrama;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button bCalcularCNDV;
+        private System.Windows.Forms.RadioButton rbUrgente;
+        private System.Windows.Forms.RadioButton rbOrdinario;
     }
 }
 

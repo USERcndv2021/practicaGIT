@@ -26,11 +26,14 @@ namespace TelegramaCNDV22_23
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (rbUrgente.Checked) //Código añadido
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
             //Si el telegrama es ordinario
+            if (rbOrdinario.Checked) //Código añadido
+                tipoTelegrama = 'o';
+
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
                     coste = 25;
